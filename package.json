@@ -1,0 +1,15 @@
+{
+  "name": "kp21p",
+  "version": "1.0.0",
+  "description": "",
+  "main": "kp21p.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-write-stream": "^2.0.0",
+    "xml2js": "^0.4.22"
+  }
+}
