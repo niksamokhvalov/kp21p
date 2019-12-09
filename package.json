@@ -2,7 +2,9 @@
   "name": "kp21p",
   "version": "1.0.0-alpha",
   "description": "KeePass to 1Password migrator.",
-  "main": "bin/kp21p",
+  "bin": {
+    "kp21p": "bin/kp21p"
+  },
   "license": "MIT",
   "dependencies": {
     "cli": "^1.0.1",
