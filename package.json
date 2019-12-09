@@ -1,6 +1,6 @@
 {
   "name": "kp21p",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-alpha3",
   "description": "KeePass to 1Password migrator.",
   "bin": {
     "kp21p": "bin/kp21p"
