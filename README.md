@@ -24,4 +24,4 @@ kp21p --help
 kp21p keepass.xml 1password.csv
 ```
 
-3. Import CSV file to 1Password.
+3. [Import CSV file](https://support.1password.com/import/#if-your-application-isn-t-listed-above) to 1Password.
