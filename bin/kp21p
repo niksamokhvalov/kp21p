@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+let Converter = require('../src/LoginsConverter.js');
+let cli = require('cli');
+
+cli.setUsage('kp21p [OPTIONS] <source file> <destination filename>\n\n' + 
+	'  <keepass filename> — exported XML file from KeePass.\n' + 
+	'  <destination filename> — name for new CSV file for import to 1Password.');
+cli.parse();
+
+try {
+	let sourceFilename = process.argv.slice(2)[0];
+	let destinationFilename = process.argv.slice(2)[1];
+
+	let converter = new Converter();
+	converter.open(sourceFilename);
+	converter.writeTo(destinationFilename);
+	
+	cli.ok(destinationFilename);
+} catch (exception) {
+	cli.error(exception.message);
+}

@@ -1,14 +1,14 @@
 {
   "name": "kp21p",
-  "version": "1.0.0",
-  "description": "",
-  "main": "kp21p.js",
+  "description": "KeePass to 1Password migrator.",
+  "main": "bin/kp21p",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm i"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
+    "cli": "^1.0.1",
     "csv-write-stream": "^2.0.0",
     "xml2js": "^0.4.22"
   }
